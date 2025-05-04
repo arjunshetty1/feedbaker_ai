@@ -6,39 +6,41 @@ export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeTab, setActiveTab] = useState("ecommerce")
 
+
+  
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-[#0F172A] text-white">
+      <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-xl font-bold">FeedbackAI</h1>
+                <h1 className="text-xl font-bold text-gray-800">FeedbackAI</h1>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
                     href="#features"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-[#1E293B] hover:text-white"
+                    className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                   >
                     Features
                   </a>
                   <a
                     href="#how-it-works"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-[#1E293B] hover:text-white"
+                    className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                   >
                     How It Works
                   </a>
                   <a
                     href="#use-cases"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-[#1E293B] hover:text-white"
+                    className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                   >
                     Use Cases
                   </a>
                   <a
                     href="#pricing"
-                    className="px-3 py-2 rounded-md text-sm font-medium hover:bg-[#1E293B] hover:text-white"
+                    className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                   >
                     Pricing
                   </a>
@@ -46,14 +48,14 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="hidden md:block">
-              <button className="bg-[#3B82F6] text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-[#2563EB]">
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-600">
                 Get Started
               </button>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-[#1E293B] focus:outline-none"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none"
               >
                 <svg
                   className="h-6 w-6"
@@ -79,32 +81,32 @@ export default function LandingPage() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
                 href="#features"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[#1E293B] hover:text-white"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
               >
                 Features
               </a>
               <a
                 href="#how-it-works"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[#1E293B] hover:text-white"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
               >
                 How It Works
               </a>
               <a
                 href="#use-cases"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[#1E293B] hover:text-white"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
               >
                 Use Cases
               </a>
               <a
                 href="#pricing"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[#1E293B] hover:text-white"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
               >
                 Pricing
               </a>
             </div>
-            <div className="pt-4 pb-3 border-t border-[#1E293B]">
+            <div className="pt-4 pb-3 border-t border-gray-200">
               <div className="px-2">
-                <button className="w-full bg-[#3B82F6] text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-[#2563EB]">
+                <button className="w-full bg-blue-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-600">
                   Get Started
                 </button>
               </div>
@@ -114,16 +116,16 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <div className="relative bg-[#0F172A] overflow-hidden">
+      <div className="relative bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="relative z-10 pb-8 bg-[#0F172A] sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+          <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <div className="pt-10 mx-auto max-w-7xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-20 lg:px-8 xl:pt-28">
               <div className="sm:text-center lg:text-left">
-                <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                   <span className="block">AI-Powered Feedback</span>
-                  <span className="block text-[#3B82F6]">That Drives Action</span>
+                  <span className="block text-blue-500">That Drives Action</span>
                 </h1>
-                <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   Transform customer feedback into actionable insights with our QR-based feedback system powered by AI.
                   Get structured, vendor-specific feedback that helps your business improve.
                 </p>
@@ -131,7 +133,7 @@ export default function LandingPage() {
                   <div className="rounded-md shadow">
                     <a
                       href="#pricing"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#3B82F6] hover:bg-[#2563EB] md:py-4 md:text-lg md:px-10"
+                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 md:py-4 md:text-lg md:px-10"
                     >
                       Get Started
                     </a>
@@ -139,7 +141,7 @@ export default function LandingPage() {
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <a
                       href="#how-it-works"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[#3B82F6] bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                      className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                     >
                       How It Works
                     </a>
@@ -150,31 +152,21 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <div className="h-56 w-full bg-[#1E293B] sm:h-72 md:h-96 lg:w-full lg:h-full flex items-center justify-center">
+          <div className="h-56 w-full bg-gray-100 sm:h-72 md:h-96 lg:w-full lg:h-full flex items-center justify-center">
             <div className="relative w-3/4 h-3/4">
-              <div className="absolute top-0 left-0 w-64 h-64 bg-[#3B82F6] opacity-20 rounded-full"></div>
-              <div className="absolute bottom-0 right-0 w-48 h-48 bg-[#3B82F6] opacity-20 rounded-full"></div>
+              <div className="absolute top-0 left-0 w-64 h-64 bg-blue-200 opacity-20 rounded-full"></div>
+              <div className="absolute bottom-0 right-0 w-48 h-48 bg-blue-200 opacity-20 rounded-full"></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <svg
-                  className="w-48 h-48 text-white"
+                  className="w-48 h-48 text-blue-500"
                   viewBox="0 0 100 100"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <rect x="20" y="20" width="60" height="60" rx="5" stroke="currentColor" strokeWidth="2" />
-                  <path
-                    d="M30 30L70 70M30 70L70 30"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
+                  <path d="M30 30L70 70M30 70L70 30" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                   <rect x="35" y="35" width="30" height="30" rx="2" stroke="currentColor" strokeWidth="2" />
-                  <path
-                    d="M40 50H60M50 40V60"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
+                  <path d="M40 50H60M50 40V60" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </div>
             </div>
@@ -183,7 +175,7 @@ export default function LandingPage() {
       </div>
 
       {/* Features Section */}
-      <div id="features" className="py-12 bg-white">
+      <div id="features" className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Key Features</h2>
@@ -195,8 +187,8 @@ export default function LandingPage() {
           <div className="mt-10">
             <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
               {/* Feature 1 */}
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#EFF6FF] text-[#3B82F6]">
+              <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-50 text-blue-500">
                   <svg
                     className="h-8 w-8"
                     xmlns="http://www.w3.org/2000/svg"
@@ -219,8 +211,8 @@ export default function LandingPage() {
               </div>
 
               {/* Feature 2 */}
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#EFF6FF] text-[#3B82F6]">
+              <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-50 text-blue-500">
                   <svg
                     className="h-8 w-8"
                     xmlns="http://www.w3.org/2000/svg"
@@ -243,8 +235,8 @@ export default function LandingPage() {
               </div>
 
               {/* Feature 3 */}
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#EFF6FF] text-[#3B82F6]">
+              <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-50 text-blue-500">
                   <svg
                     className="h-8 w-8"
                     xmlns="http://www.w3.org/2000/svg"
@@ -267,8 +259,8 @@ export default function LandingPage() {
               </div>
 
               {/* Feature 4 */}
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#EFF6FF] text-[#3B82F6]">
+              <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-50 text-blue-500">
                   <svg
                     className="h-8 w-8"
                     xmlns="http://www.w3.org/2000/svg"
@@ -291,8 +283,8 @@ export default function LandingPage() {
               </div>
 
               {/* Feature 5 */}
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#EFF6FF] text-[#3B82F6]">
+              <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-50 text-blue-500">
                   <svg
                     className="h-8 w-8"
                     xmlns="http://www.w3.org/2000/svg"
@@ -315,8 +307,8 @@ export default function LandingPage() {
               </div>
 
               {/* Feature 6 */}
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#EFF6FF] text-[#3B82F6]">
+              <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-50 text-blue-500">
                   <svg
                     className="h-8 w-8"
                     xmlns="http://www.w3.org/2000/svg"
@@ -343,7 +335,7 @@ export default function LandingPage() {
       </div>
 
       {/* How It Works Section */}
-      <div id="how-it-works" className="py-12 bg-gray-50">
+      <div id="how-it-works" className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">How It Works</h2>
@@ -357,8 +349,8 @@ export default function LandingPage() {
               {/* Steps */}
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 {/* Step 1 */}
-                <div className="relative flex flex-col items-center">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#3B82F6] text-white text-xl font-bold">
+                <div className="relative flex flex-col items-center bg-white p-6 rounded-lg shadow-sm">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white text-xl font-bold">
                     1
                   </div>
                   <h3 className="mt-4 text-lg font-medium text-gray-900">Generate QR Codes</h3>
@@ -368,8 +360,8 @@ export default function LandingPage() {
                 </div>
 
                 {/* Step 2 */}
-                <div className="relative flex flex-col items-center">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#3B82F6] text-white text-xl font-bold">
+                <div className="relative flex flex-col items-center bg-white p-6 rounded-lg shadow-sm">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white text-xl font-bold">
                     2
                   </div>
                   <h3 className="mt-4 text-lg font-medium text-gray-900">Customers Scan & Respond</h3>
@@ -379,8 +371,8 @@ export default function LandingPage() {
                 </div>
 
                 {/* Step 3 */}
-                <div className="relative flex flex-col items-center">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#3B82F6] text-white text-xl font-bold">
+                <div className="relative flex flex-col items-center bg-white p-6 rounded-lg shadow-sm">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white text-xl font-bold">
                     3
                   </div>
                   <h3 className="mt-4 text-lg font-medium text-gray-900">AI Processes Feedback</h3>
@@ -390,8 +382,8 @@ export default function LandingPage() {
                 </div>
 
                 {/* Step 4 */}
-                <div className="relative flex flex-col items-center">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#3B82F6] text-white text-xl font-bold">
+                <div className="relative flex flex-col items-center bg-white p-6 rounded-lg shadow-sm">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white text-xl font-bold">
                     4
                   </div>
                   <h3 className="mt-4 text-lg font-medium text-gray-900">Implement Improvements</h3>
@@ -401,17 +393,14 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              {/* Connecting Line (Desktop) */}
-              <div className="hidden md:block absolute top-6 left-0 w-full h-0.5 bg-gray-200">
-                <div className="absolute left-0 right-0 h-full bg-[#3B82F6] w-0 transition-all duration-1000"></div>
-              </div>
+             
             </div>
           </div>
         </div>
       </div>
 
       {/* Use Cases Section */}
-      <div id="use-cases" className="py-12 bg-white">
+      <div id="use-cases" className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Use Cases</h2>
@@ -425,9 +414,7 @@ export default function LandingPage() {
               <button
                 onClick={() => setActiveTab("ecommerce")}
                 className={`flex-1 py-2 px-4 rounded-md ${
-                  activeTab === "ecommerce"
-                    ? "bg-[#3B82F6] text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  activeTab === "ecommerce" ? "bg-blue-500 text-white" : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
                 E-commerce
@@ -435,9 +422,7 @@ export default function LandingPage() {
               <button
                 onClick={() => setActiveTab("restaurants")}
                 className={`flex-1 py-2 px-4 rounded-md ${
-                  activeTab === "restaurants"
-                    ? "bg-[#3B82F6] text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  activeTab === "restaurants" ? "bg-blue-500 text-white" : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
                 Restaurants
@@ -445,9 +430,7 @@ export default function LandingPage() {
               <button
                 onClick={() => setActiveTab("malls")}
                 className={`flex-1 py-2 px-4 rounded-md ${
-                  activeTab === "malls"
-                    ? "bg-[#3B82F6] text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  activeTab === "malls" ? "bg-blue-500 text-white" : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
                 Malls
@@ -456,7 +439,7 @@ export default function LandingPage() {
 
             {/* E-commerce Tab */}
             {activeTab === "ecommerce" && (
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">E-commerce Sellers</h3>
@@ -467,80 +450,60 @@ export default function LandingPage() {
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Attach QR codes to packages for immediate post-purchase feedback</span>
                       </li>
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Offer cashback or discounts to incentivize detailed feedback</span>
                       </li>
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Get AI-generated suggestions to improve product quality and delivery</span>
                       </li>
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Track feedback trends over time to measure improvements</span>
                       </li>
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <div className="bg-gray-100 p-6 rounded-lg w-full max-w-md">
+                    <div className="bg-gray-50 p-6 rounded-lg w-full max-w-md">
                       <div className="text-center mb-4">
-                        <div className="inline-block p-3 bg-[#EFF6FF] rounded-lg">
+                        <div className="inline-block p-3 bg-blue-50 rounded-lg">
                           <svg
-                            className="h-12 w-12 text-[#3B82F6]"
+                            className="h-12 w-12 text-blue-500"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -558,7 +521,7 @@ export default function LandingPage() {
                       <div className="space-y-4">
                         <div className="flex items-start">
                           <div className="flex-shrink-0">
-                            <div className="h-8 w-8 rounded-full bg-[#3B82F6] flex items-center justify-center text-white font-bold text-sm">
+                            <div className="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm">
                               AI
                             </div>
                           </div>
@@ -567,7 +530,7 @@ export default function LandingPage() {
                           </div>
                         </div>
                         <div className="flex items-start justify-end">
-                          <div className="mr-3 bg-[#3B82F6] p-3 rounded-lg shadow-sm">
+                          <div className="mr-3 bg-blue-500 p-3 rounded-lg shadow-sm">
                             <p className="text-sm text-white">The delivery was late by 2 days.</p>
                           </div>
                           <div className="flex-shrink-0">
@@ -578,12 +541,14 @@ export default function LandingPage() {
                         </div>
                         <div className="flex items-start">
                           <div className="flex-shrink-0">
-                            <div className="h-8 w-8 rounded-full bg-[#3B82F6] flex items-center justify-center text-white font-bold text-sm">
+                            <div className="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm">
                               AI
                             </div>
                           </div>
                           <div className="ml-3 bg-white p-3 rounded-lg shadow-sm">
-                            <p className="text-sm text-gray-700">I'm sorry to hear that. Was the product in good condition when it arrived?</p>
+                            <p className="text-sm text-gray-700">
+                              I'm sorry to hear that. Was the product in good condition when it arrived?
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -595,90 +560,71 @@ export default function LandingPage() {
 
             {/* Restaurants Tab */}
             {activeTab === "restaurants" && (
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Restaurants</h3>
                     <p className="text-gray-600 mb-4">
-                      Collect detailed feedback about food quality, service, and ambiance to continuously improve your customer experience.
+                      Collect detailed feedback about food quality, service, and ambiance to continuously improve your
+                      customer experience.
                     </p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Place QR codes on tables or receipts for easy access</span>
                       </li>
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Optional pre-payment enforcement to ensure high response rates</span>
                       </li>
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Offer discounts on next visit to encourage return customers</span>
                       </li>
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Get specific feedback on menu items, service, and cleanliness</span>
                       </li>
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <div className="bg-gray-100 p-6 rounded-lg w-full max-w-md">
+                    <div className="bg-gray-50 p-6 rounded-lg w-full max-w-md">
                       <div className="text-center mb-4">
-                        <div className="inline-block p-3 bg-[#EFF6FF] rounded-lg">
+                        <div className="inline-block p-3 bg-blue-50 rounded-lg">
                           <svg
-                            className="h-12 w-12 text-[#3B82F6]"
+                            className="h-12 w-12 text-blue-500"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -696,7 +642,7 @@ export default function LandingPage() {
                       <div className="space-y-4">
                         <div className="flex items-start">
                           <div className="flex-shrink-0">
-                            <div className="h-8 w-8 rounded-full bg-[#3B82F6] flex items-center justify-center text-white font-bold text-sm">
+                            <div className="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm">
                               AI
                             </div>
                           </div>
@@ -705,7 +651,7 @@ export default function LandingPage() {
                           </div>
                         </div>
                         <div className="flex items-start justify-end">
-                          <div className="mr-3 bg-[#3B82F6] p-3 rounded-lg shadow-sm">
+                          <div className="mr-3 bg-blue-500 p-3 rounded-lg shadow-sm">
                             <p className="text-sm text-white">Food was great but tables were not clean.</p>
                           </div>
                           <div className="flex-shrink-0">
@@ -716,12 +662,15 @@ export default function LandingPage() {
                         </div>
                         <div className="flex items-start">
                           <div className="flex-shrink-0">
-                            <div className="h-8 w-8 rounded-full bg-[#3B82F6] flex items-center justify-center text-white font-bold text-sm">
+                            <div className="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm">
                               AI
                             </div>
                           </div>
                           <div className="ml-3 bg-white p-3 rounded-lg shadow-sm">
-                            <p className="text-sm text-gray-700">Thank you for letting us know. Which dish did you enjoy the most, and what specific cleanliness issues did you notice?</p>
+                            <p className="text-sm text-gray-700">
+                              Thank you for letting us know. Which dish did you enjoy the most, and what specific
+                              cleanliness issues did you notice?
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -733,90 +682,71 @@ export default function LandingPage() {
 
             {/* Malls Tab */}
             {activeTab === "malls" && (
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Shopping Malls</h3>
                     <p className="text-gray-600 mb-4">
-                      Gather insights about visitor experience, facilities, and shopping preferences to optimize your mall operations.
+                      Gather insights about visitor experience, facilities, and shopping preferences to optimize your
+                      mall operations.
                     </p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Place QR codes at exits, food courts, and information desks</span>
                       </li>
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Offer mall-wide discount vouchers for feedback completion</span>
                       </li>
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Get insights on facilities, store mix, and customer service</span>
                       </li>
                       <li className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-[#3B82F6] mt-0.5 mr-2"
+                          className="h-5 w-5 text-blue-500 mt-0.5 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span>Track visitor satisfaction across different mall areas</span>
                       </li>
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <div className="bg-gray-100 p-6 rounded-lg w-full max-w-md">
+                    <div className="bg-gray-50 p-6 rounded-lg w-full max-w-md">
                       <div className="text-center mb-4">
-                        <div className="inline-block p-3 bg-[#EFF6FF] rounded-lg">
+                        <div className="inline-block p-3 bg-blue-50 rounded-lg">
                           <svg
-                            className="h-12 w-12 text-[#3B82F6]"
+                            className="h-12 w-12 text-blue-500"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -834,7 +764,7 @@ export default function LandingPage() {
                       <div className="space-y-4">
                         <div className="flex items-start">
                           <div className="flex-shrink-0">
-                            <div className="h-8 w-8 rounded-full bg-[#3B82F6] flex items-center justify-center text-white font-bold text-sm">
+                            <div className="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm">
                               AI
                             </div>
                           </div>
@@ -843,8 +773,10 @@ export default function LandingPage() {
                           </div>
                         </div>
                         <div className="flex items-start justify-end">
-                          <div className="mr-3 bg-[#3B82F6] p-3 rounded-lg shadow-sm">
-                            <p className="text-sm text-white">Parking was difficult to find and the food court was too crowded.</p>
+                          <div className="mr-3 bg-blue-500 p-3 rounded-lg shadow-sm">
+                            <p className="text-sm text-white">
+                              Parking was difficult to find and the food court was too crowded.
+                            </p>
                           </div>
                           <div className="flex-shrink-0">
                             <div className="h-8 w-8 rounded-full bg-gray-300 flex items-center justify-center text-gray-700 font-bold text-sm">
@@ -854,12 +786,15 @@ export default function LandingPage() {
                         </div>
                         <div className="flex items-start">
                           <div className="flex-shrink-0">
-                            <div className="h-8 w-8 rounded-full bg-[#3B82F6] flex items-center justify-center text-white font-bold text-sm">
+                            <div className="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm">
                               AI
                             </div>
                           </div>
                           <div className="ml-3 bg-white p-3 rounded-lg shadow-sm">
-                            <p className="text-sm text-gray-700">I appreciate your feedback. What time did you visit, and which stores did you enjoy shopping at?</p>
+                            <p className="text-sm text-gray-700">
+                              I appreciate your feedback. What time did you visit, and which stores did you enjoy
+                              shopping at?
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -873,7 +808,7 @@ export default function LandingPage() {
       </div>
 
       {/* AI Suggestions Section */}
-      <div className="py-12 bg-gray-50">
+      <div className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">AI-Powered Actionables</h2>
@@ -883,7 +818,7 @@ export default function LandingPage() {
           </div>
 
           <div className="mt-10">
-            <div className="bg-white overflow-hidden shadow rounded-lg">
+            <div className="bg-white overflow-hidden shadow-sm rounded-lg border border-gray-200">
               <div className="px-4 py-5 sm:p-6">
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
@@ -938,7 +873,7 @@ export default function LandingPage() {
       </div>
 
       {/* Pricing Section */}
-      <div id="pricing" className="py-12 bg-white">
+      <div id="pricing" className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Pricing Plans</h2>
@@ -1019,7 +954,7 @@ export default function LandingPage() {
               </div>
 
               <div className="mt-8">
-                <button className="w-full bg-[#3B82F6] border border-transparent rounded-md py-3 px-5 text-base font-medium text-white hover:bg-[#2563EB]">
+                <button className="w-full bg-blue-500 border border-transparent rounded-md py-3 px-5 text-base font-medium text-white hover:bg-blue-600">
                   Get Started
                 </button>
               </div>
@@ -1028,7 +963,7 @@ export default function LandingPage() {
             {/* Pro Plan */}
             <div className="relative p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
               <div className="absolute -top-4 -right-4">
-                <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-[#3B82F6] text-white">
+                <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-500 text-white">
                   Popular
                 </span>
               </div>
@@ -1115,7 +1050,7 @@ export default function LandingPage() {
               </div>
 
               <div className="mt-8">
-                <button className="w-full bg-[#3B82F6] border border-transparent rounded-md py-3 px-5 text-base font-medium text-white hover:bg-[#2563EB]">
+                <button className="w-full bg-blue-500 border border-transparent rounded-md py-3 px-5 text-base font-medium text-white hover:bg-blue-600">
                   Get Started
                 </button>
               </div>
@@ -1205,7 +1140,7 @@ export default function LandingPage() {
               </div>
 
               <div className="mt-8">
-                <button className="w-full bg-[#3B82F6] border border-transparent rounded-md py-3 px-5 text-base font-medium text-white hover:bg-[#2563EB]">
+                <button className="w-full bg-blue-500 border border-transparent rounded-md py-3 px-5 text-base font-medium text-white hover:bg-blue-600">
                   Contact Sales
                 </button>
               </div>
@@ -1213,7 +1148,129 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+
+      {/* CTA Section */}
+      <div className="bg-white py-12 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              Ready to transform your customer feedback?
+            </h2>
+            <p className="mt-4 text-lg text-gray-500">
+              Join hundreds of businesses already using FeedbackAI to improve their products and services.
+            </p>
+            <div className="mt-8 flex justify-center">
+              <div className="inline-flex rounded-md shadow">
+                <a
+                  href="#pricing"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600"
+                >
+                  Get Started
+                </a>
+              </div>
+              <div className="ml-3 inline-flex">
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  Request Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-lg font-bold text-gray-900">FeedbackAI</h3>
+              <p className="mt-2 text-sm text-gray-500">AI-powered actionable feedback for businesses.</p>
+              <div className="mt-4 flex space-x-4">
+                <a href="#" className="text-gray-400 hover:text-gray-500">
+                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                  </svg>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-gray-500">
+                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  </svg>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-gray-500">
+                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Product</h3>
+              <ul className="mt-4 space-y-4">
+                <li>
+                  <a href="#features" className="text-base text-gray-500 hover:text-gray-900">
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a href="#pricing" className="text-base text-gray-500 hover:text-gray-900">
+                    Pricing
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+              <ul className="mt-4 space-y-4">
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    Blog
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+              <ul className="mt-4 space-y-4">
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    Cookie Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-center">
+            <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+              &copy; 2025 Feedbaker AI. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
   )
 }
-    
