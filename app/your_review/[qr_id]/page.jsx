@@ -180,8 +180,8 @@ function FeedbackCard() {
       <Card className="w-full shadow-lg overflow-hidden flex flex-col" ref={cardRef}>
         {renderRestaurantHeader()}
 
-        <div className="bg-green-500 text-white py-2 px-3 text-center">
-          <h2 className="text-base font-medium">Thanks for your feedback!</h2>
+        <div className=" text-[green] py-2 pt-5 px-3 text-center">
+          <h2 className="text-base font-normal">Thanks for your feedback!</h2>
         </div>
 
         <CardContent className="p-3 flex-grow overflow-y-auto">
