@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Textarea } from "@/components/ui/textarea"
@@ -45,8 +45,30 @@ const questions = [
   },
 ]
 
+
+
+const handleSubmit = async () => {
+  const data = "ds"
+
+  try {
+    const send = await fetch('/api/review', {
+      method: 'POST',
+      headers: {
+        'Content-Type': "application/json",
+      },
+      body: JSON.stringify({ data })
+    })
+    return send;
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+
+
 // Feedback Card Component
 function FeedbackCard() {
+
   const [currentStep, setCurrentStep] = useState(0)
   const [selectedOptions, setSelectedOptions] = useState({})
   const [comments, setComments] = useState({})
@@ -56,6 +78,15 @@ function FeedbackCard() {
   const discountCode = "RAMESH-849F"
   const isLastQuestion = currentStep === questions.length - 1
   const isComplete = currentStep === questions.length
+
+  const sendFeedback = async () => {
+    const response = await handleSubmit()
+    const data = await response.json()
+    console.log("Response:", data)
+  }
+  useEffect(() => {
+    sendFeedback()
+  }, [])
 
   const handleOptionSelect = (questionId, value) => {
     setSelectedOptions((prev) => ({ ...prev, [questionId]: value }))
